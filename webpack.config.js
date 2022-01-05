@@ -7,5 +7,12 @@ module.exports = {
         path: path.resolve(__dirname, 'app')
     },
     mode: 'development',
-    watch: true
+    watch: true,
+    module: {
+        rules: [
+            {
+                test: /\.css$/i
+            }
+        ]
+    }
 }
