@@ -1,1 +1,1 @@
-alert("Hello, this is just a test")
+alert("The Sky is BLUE!")
