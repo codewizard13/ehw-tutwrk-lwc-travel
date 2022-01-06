@@ -11,6 +11,6 @@
     text-align: center;
 }
 
-.large-hero h1 {
+.large-hero__title {
     font-weight: 300;
 }
