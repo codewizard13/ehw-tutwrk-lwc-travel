@@ -14,7 +14,7 @@ module.exports = {
         path: path.resolve(__dirname, 'app')
     },
     devServer: {
-        contentBase: path.join(__dirname, 'app'),
+        static: path.join(__dirname, 'app'),
         hot: true,
         port: 3000
     },
