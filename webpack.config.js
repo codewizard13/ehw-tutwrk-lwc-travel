@@ -14,8 +14,10 @@ module.exports = {
         path: path.resolve(__dirname, 'app')
     },
     devServer: {
-        before: function(app, server) {
-            server._watch('./app/**/*.html')
+        onBeforeSetupMiddleware: function (devServer) {
+            devServer.app.get('./app/**/*.html', function (req, res) {
+              res.json({ custom: "response" });
+            });
         },
         static: path.join(__dirname, 'app'),
         hot: true,
