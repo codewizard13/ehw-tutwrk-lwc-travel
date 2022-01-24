@@ -14,11 +14,7 @@ module.exports = {
         path: path.resolve(__dirname, 'app')
     },
     devServer: {
-        onBeforeSetupMiddleware: function (devServer) {
-            devServer.app.get('./app/**/*.html', function (req, res) {
-              res.json({ custom: "response" });
-            });
-        },
+        watchFiles: ('./app/**/*.html'),
         static: path.join(__dirname, 'app'),
         hot: true,
         port: 3000
