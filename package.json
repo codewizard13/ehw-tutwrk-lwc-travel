@@ -30,7 +30,7 @@
     "postcss-nested": "^5.0.6",
     "postcss-simple-vars": "^6.0.3",
     "style-loader": "^3.3.1",
-    "webpack": "^5.65.0",
+    "webpack": "^5.67.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
   }
